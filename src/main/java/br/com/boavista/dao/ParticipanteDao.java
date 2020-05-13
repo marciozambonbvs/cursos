@@ -20,7 +20,7 @@ public class ParticipanteDao {
 	public ParticipanteDao() {
 		try {
 			Class.forName("org.sqlite.JDBC");
-			this.connection = DriverManager.getConnection("jdbc:sqlite:participantes.db");
+			this.connection = DriverManager.getConnection("jdbc:sqlite:treinamento.db");
 			this.sqlDDL = this.connection.createStatement();
 			
 			sqlDDL.executeUpdate("drop table if exists participantes");

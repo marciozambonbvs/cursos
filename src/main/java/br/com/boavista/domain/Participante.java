@@ -14,13 +14,13 @@ public class Participante {
 	
 	public static Participante fromCSV(String csv) {
 		String[] dados = csv.split(";");
-		Participante c = new Participante();
-		c.setId(Integer.valueOf(dados[0]));
-		c.setTreinamento(dados[1]);
-		c.setNome(dados[2]);
-		c.setEmail(dados[3]);
-		c.setArea(dados[4]);
+		Participante p = new Participante();
+		p.setId(Integer.valueOf(dados[0]));
+		p.setTreinamento(dados[1]);
+		p.setNome(dados[2]);
+		p.setEmail(dados[3]);
+		p.setArea(dados[4]);
 		
-		return c;
+		return p;
 	}
 }
